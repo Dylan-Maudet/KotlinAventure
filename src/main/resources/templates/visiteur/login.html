@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head th:replace="mesFragments :: fragHead">
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+</head>
+<body>
+
+<div class="nav-bar-cell1-rev">
+    <nav th:replace="mesFragments :: fragNav"></nav>
+</div>
+
+<form action="/login.html" method="post">
+    <ul>
+        <li>
+            <label for="name">Nom&nbsp;:</label>
+            <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+            <label for="mdp">Mot De Passe&nbsp;:</label>
+            <input type="text" id="mdp" name="mot_de_passe" />
+        </li>
+    </ul>
+    <div class="button">
+        <button type="submit">Se connecter</button>
+    </div>
+</form>
+
+<!-- Footer -->
+<footer th:replace="mesFragments :: fragFooter"></footer>
+<!-- Footer -->
+</body>
+<!-- End of .container -->
+</html>

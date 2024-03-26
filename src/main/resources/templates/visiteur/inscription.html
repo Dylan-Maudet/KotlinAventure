@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymleaf.org">
+<head th:replace="mesFragments :: fragHead">
+    <meta charset="UTF-8">
+    <title>Page d'Inscription</title>
+</head>
+<body>
+
+<div class="nav-bar-cell1-rev">
+    <nav th:replace="mesFragments :: fragNav"></nav>
+</div>
+
+<form action="/inscription.html" method="post">
+    <ul>
+        <li>
+            <label for="name">Nom&nbsp;:</label>
+            <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+            <label for="Firstname">prenom&nbsp;:</label>
+            <input type="text" id="firstname" firstname="user_name" />
+        </li>
+        <li>
+            <label for="mail">E-mail&nbsp;:</label>
+            <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+            <label for="sexe"> sexe </label>
+            <input type="radio" id="sexe" name="sexe" value="H" > homme
+            <input type="radio" name="sexe" value="F" checked> femme
+        </li>
+        <li>
+            <label for="Date de naissance"> Date de naissance</label>
+            <input type="date" id="Date de naissance" name="naissance" />
+        </li>
+    </ul>
+    <div class="button">
+        <button type="submit">S'inscrire</button>
+    </div>
+</form>
+<!-- Footer -->
+<footer th:replace="mesFragments :: fragFooter"></footer>
+<!-- Footer -->
+</body>
+</html>
